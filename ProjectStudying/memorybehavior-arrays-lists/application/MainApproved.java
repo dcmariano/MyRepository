@@ -11,7 +11,7 @@ public class MainApproved {
 		System.out.println("How many students will be typed?");
 		int n = sc.nextInt();
 		Student1[] student = new Student1[n];
-		String approved = null;
+		String approved = "";
 
 		for (int i = 0; i < n; i++) {
 			System.out.println("Enter the name, first and second grade of the " + (i + 1) + "º student:");
@@ -20,10 +20,12 @@ public class MainApproved {
 			double firstNote = sc.nextDouble();
 			double secondNote = sc.nextDouble();
 			student[i] = new Student1(name, firstNote, secondNote);
-			if (student[i].getFirstNote() + student[i].getSecondNote() > 6) {
-				
+
+			if ((student[i].getFirstNote() + student[i].getSecondNote()) / 2 >= 6) {
+				approved += student[i].getName() + "\n";
 			}
 		}
+		System.out.println("\nApproved Students: \n" + approved);
 		sc.close();
 	}
 
