@@ -8,5 +8,6 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="src" path="introduction-object-orientation"/>
 	<classpathentry kind="src" path="constructor-this-overload-encapsulation"/>
+	<classpathentry kind="src" path="memorybehavior-arrays-lists"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
